@@ -1,0 +1,12 @@
+ork/networkSecurityGroups/vinay-vm-nsg]
+╷
+│ Error: creating Linux Virtual Machine (Subscription: "75e7d133-f97c-4a33-b717-3001b8a3cdd9"
+│ Resource Group Name: "vm-rg"
+│ Virtual Machine Name: "vinay-vm"): performing CreateOrUpdate: unexpected status 409 (409 Conflict) with error: SkuNotAvailable: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+│ 
+│   with azurerm_linux_virtual_machine.vm,
+│   on main.tf line 64, in resource "azurerm_linux_virtual_machine" "vm":
+│   64: resource "azurerm_linux_virtual_machine" "vm" {
+│ 
+╵
+Releasing state lock. This may take a few moments...
